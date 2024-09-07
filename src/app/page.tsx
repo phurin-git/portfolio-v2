@@ -6,6 +6,7 @@ import Project from "./ui/Project";
 import Contact from "./ui/Contact";
 import Footer from "./ui/Footer";
 import { LeftDock, RightDock } from "./ui/Dock";
+import Skill from "./ui/Skill";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <About />
         <Experience />
+        <Skill />
         <Project />
         <Contact />
       </main>

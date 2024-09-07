@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+    @apply text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none;
+}
+
+h2 {
+    @apply text-xl font-bold;
+}
+
+p {
+    @apply text-justify font-sans text-sm;
+}
+
+a {
+    @apply underline;
+}
+
+span {
+    @apply inline-block max-w-[600px] md:text-xl;
+}
