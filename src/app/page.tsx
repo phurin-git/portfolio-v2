@@ -1,12 +1,13 @@
-import Nav from "./ui/Nav";
-import Hero from "./ui/Hero";
-import About from "./ui/About";
-import Experience from "./ui/Experience";
-import Project from "./ui/Project";
-import Contact from "./ui/Contact";
-import Footer from "./ui/Footer";
-import { LeftDock, RightDock } from "./ui/Dock";
-import Skill from "./ui/Skill";
+import Nav from './ui/Nav';
+import Hero from './ui/Hero';
+import About from './ui/About';
+import Experience from './ui/Experience';
+import Education from './ui/Education'
+import Skills from './ui/Skills';
+import Projects from './ui/Projects';
+import Contact from './ui/Contact';
+import Footer from './ui/Footer';
+import { LeftDock, RightDock } from './ui/Dock';
 
 export default function Home() {
   return (
@@ -18,11 +19,12 @@ export default function Home() {
         <Hero />
         <About />
         <Experience />
-        <Skill />
-        <Project />
+        <Education />
+        <Skills />
+        <Projects />
         <Contact />
       </main>
       <Footer />
     </>
   );
-}
+};

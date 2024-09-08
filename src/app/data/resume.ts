@@ -29,12 +29,13 @@ export const data = {
         "MySQL",
     ],
     navBar: [
-        { name: "Home", url: "/" },
+        // { name: "Home", url: "/" },
         { name: "About", url: "/#about" },
         { name: "Experience", url: "/#experience" },
         { name: "Education", url: "/#education" },
         { name: "Projects", url: "/#projects" },
         { name: "Contact", url: "/#contact" },
+        { name: "Resume", url: "/resume.pdf" },
     ],
     contacts: {
         email: "phurin.nrt@gmail.com",
@@ -68,7 +69,7 @@ export const data = {
             href: "https://www.mitsubishifa.co.th/",
             location: "Phra Khanong, Bangkok, Thailand",
             title: "Internship",
-            logoUrl: "/logo/melft.png",
+            logoUrl: "/logo/melft.svg",
             start: "Aug 2022",
             end: "Nov 2022",
             description: "Design SCADA system, sharing techniques and providing user manuals to customers and team members. Also designed SCADA prototype for company's decarbonization project."
@@ -78,7 +79,7 @@ export const data = {
             href: "https://www.somboonsiasuntech.co.th/",
             location: "Bang Chalong, Samut Prakan, Thailand",
             title: "Automation Engineer",
-            logoUrl: "/logo/sst.png",
+            logoUrl: "/logo/sst.svg",
             start: "Jun 2023",
             end: "Jul 2024",
             description: "Installed and wired ASRS electrical components, programmed PLC and HMI for control, and integrated ASRS with WMS, WCS, and ERP systems. Conducted hardware and software testing to validate performance, trained customers on operation and maintenance, and managed the go-live process while monitoring initial performance"
@@ -89,15 +90,15 @@ export const data = {
             school: "Kasetsart University",
             href: "https://www.ku.ac.th/",
             degree: "B.Eng. in Robotic and Automation Systems Engineering",
-            logoUrl: "/logo/ku.png",
+            logoUrl: "/logo/ku.svg",
             start: "2019",
             end: "2023",
         },
     ],
-    project: [
+    projects: [
         {
             title: "Portfolio-v1",
-            href: "https://v1.phurinnararat.works/",
+            href: "https://portfolio-phurin-nararats-projects.vercel.app/",
             dates: "",
             description: "",
             technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
@@ -106,7 +107,7 @@ export const data = {
             links: [
                 {
                     type: "website",
-                    href: "https://v1.phurinnararat.works/",
+                    href: "https://portfolio-phurin-nararats-projects.vercel.app/",
                 },
                 {
                     type: "source",

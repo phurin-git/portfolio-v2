@@ -1,6 +1,6 @@
 import { data } from '../data/resume';
-const Skill = () => (
-    <section id="skills" className='flex flex-col gap-y-3'>
+const Skills = () => (
+    <section id='skills'>
         <h2>Skills</h2>
         <ul className='flex flex-wrap gap-1'>
             {data.skills.map((skill, index) => (
@@ -10,4 +10,4 @@ const Skill = () => (
     </section>
 )
 
-export default Skill;
+export default Skills;

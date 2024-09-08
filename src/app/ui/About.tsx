@@ -1,9 +1,16 @@
-import Markdown from 'react-markdown'; 'react-markdown'
-import { data } from '../data/resume'
+import Markdown from 'react-markdown';
+import { data } from '../data/resume';
+
 const About = () => (
-    <section id="about">
+    <section id='about'>
         <h2>About</h2>
-        <Markdown>{data.summary}</Markdown>
+        <Markdown components={{
+            a: ({ ...props }) => (
+                <a {...props} target='_blank' rel='noopener noreferrer'>
+                  {props.children}
+                </a>
+              ),
+        }}>{data.summary}</Markdown>
     </section>
 )
 

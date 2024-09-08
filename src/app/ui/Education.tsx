@@ -3,35 +3,32 @@ import Link from 'next/link';
 import { data } from '../data/resume';
 
 const getCard = (data: {
-    company: string;
+    school: string;
     href: string;
-    location: string;
-    title: string;
+    degree: string;
     logoUrl: string;
     start: string;
     end: string;
-    description: string;
 }, index: number) => (
     <Link key={index} href={data.href} target='_blank' rel='noopener noreferrer' className='flex gap-4'>
         <div className='relative shrink-0 size-12'>
             <Image src={data.logoUrl} alt='' fill />
         </div>
-        <div className='flex flex-col'>
-            <div className='flex justify-between items-center gap-x-2'>
-                <h3 className='after:content-["_↗"]'>{data.company}</h3>
+        <div className='w-full flex flex-col'>
+            <div className='flex justify-between items-center gap-x-2 text-base'>
+                <h3 className='after:content-["_↗"]'>{data.school}</h3>
                 <p className='range text-xs sm:text-sm text-right'>{`${data.start} — ${data.end}`}</p>
             </div>
-            <h4 className='text-xs'>{data.title}</h4>
-            <p className='mt-2 text-xs sm:text-sm'>{data.description}</p>
+            <h4 className='text-xs'>{data.degree}</h4>
         </div>
     </Link>
 );
 
-const Experience = () => (
-    <section id='experience'>
-        <h2>Work Experience</h2>
-        {data.works.reverse().map(getCard)}
+const Education = () => (
+    <section id='education'>
+        <h2>Education</h2>
+        {data.education.reverse().map(getCard)}
     </section>
 );
 
-export default Experience;
+export default Education;
