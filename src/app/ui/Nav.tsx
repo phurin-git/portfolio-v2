@@ -7,7 +7,7 @@ const getNav = (data: {
 }, index: number) => (
     data.name === 'Resume'
     ? <li key={index} className='flex bg-black rounded-md'>
-        <Link href={data.url} target='_blank' rel='noopener noreferrer' className='px-4 py-3 border border-black rounded-md hover:-translate-x-1 hover:-translate-y-1 transition-transform bg-white font-mono'>{data.name}</Link>
+        <a href={data.url} target='_blank' rel='noopener noreferrer' className='px-4 py-3 border border-black rounded-md hover:-translate-x-1 hover:-translate-y-1 transition-transform bg-white font-mono'>{data.name}</a>
     </li>
     : <li key={index} className='flex'>
         <Link href={data.url} className='p-[10px] text-gray-500'>{data.name}</Link>
