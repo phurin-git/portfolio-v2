@@ -7,7 +7,8 @@ body {
 }
 
 .range {
-    @apply font-mono text-gray-500;
+    @apply font-mono;
+    color: #737373;
 }
 
 section {
