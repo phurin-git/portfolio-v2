@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    @apply scroll-smooth;
+}
+
 body {
     @apply text-[#08090A];
 }
 
 .range {
-    @apply font-mono;
-    color: #737373;
+    @apply font-mono text-gray-500;
 }
 
 section {
@@ -43,6 +46,10 @@ span {
     @apply max-w-[600px] md:text-xl;
 }
 
+footer {
+    @apply text-gray-500;
+}
+
 footer a {
-    @apply font-medium;
+    @apply font-medium hover:text-black;
 }

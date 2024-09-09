@@ -46,7 +46,7 @@ const getCard = (data: {
 );
 
 const Projects = () => (
-    <section id='projects' className='space-y-12 py-12'>
+    <section id='projects' className='space-y-12 -mt-24 pt-24 pb-12'>
         <div className='flex flex-col justify-center items-center space-y-2 text-center'>
             <h2 className='rounded-lg bg-black text-white px-3 py-1 text-sm font-normal'>My Projects</h2>
             <span className='text-3xl font-bold tracking-tighter sm:text-5xl'>Check out my latest work</span>

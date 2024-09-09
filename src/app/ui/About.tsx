@@ -2,7 +2,7 @@ import Markdown from 'react-markdown';
 import { data } from '../data/resume';
 
 const About = () => (
-    <section id='about'>
+    <section id='about' className='-mt-24 pt-24'>
         <h2>About</h2>
         <Markdown components={{
             a: ({ ...props }) => (
