@@ -20,7 +20,7 @@ const getCard = (data: {
     }[];
 }, index: number) => (
     <div key={index} className='rounded-lg flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full'>
-        <Link href={data.href} target='_blank' rel='noopener noreferrer' className='relative w-full h-40'>
+        <Link href={data.href} title={data.title} target='_blank' rel='noopener noreferrer' className='relative w-full h-40'>
             <Image src={data.image} alt='' fill className='mx-auto object-cover object-top'/>
         </Link>
         <div className='flex flex-col space-y-1 px-2'>
@@ -34,7 +34,7 @@ const getCard = (data: {
         </div>
         <div className='flex items-center p-2 gap-1'>
             {data.links.map((link, index) => (
-                <Link key={index} href={link.href} target='_blank' rel='noopener noreferrer' className='flex flex-wrap gap-1 items-start'>
+                <Link key={index} title={link.type} href={link.href} target='_blank' rel='noopener noreferrer' className='flex flex-wrap gap-1 items-start'>
                     <div className='rounded-md flex gap-2 items-center border text-white bg-black text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 px-2 py-1'>
                         <FontAwesomeIcon icon={link.type === 'website' ? faGlobe : faGithub} className='size-3' />
                         <small className='capitalize'>{link.type}</small>

@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import { data } from '../data/resume';
 
-const getFaElement = (data: {url: string, icon: IconDefinition}) => (
+const getFaElement = (data: {name: string, url: string, icon: IconDefinition}) => (
     <li>
-        <Link href={data.url} target='_blank' rel='noopener noreferrer'>
+        <Link href={data.url} title={data.name} target='_blank' rel='noopener noreferrer'>
             <FontAwesomeIcon icon={data.icon} className='w-5 h-auto mx-auto my-3 hover:-translate-y-1 transition-transform'/>
         </Link>
     </li>
