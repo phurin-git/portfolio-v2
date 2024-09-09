@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased max-w-2xl mx-auto px-6 pt-4`}
+        className={`${inter.className} antialiased max-w-2xl mx-auto pt-4`}
       >
         {children}
       </body>

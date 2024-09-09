@@ -15,7 +15,7 @@ export default function Home() {
       <LeftDock />
       <RightDock />
       <Nav />
-      <main>
+      <main className='px-6'>
         <Hero />
         <About />
         <Experience />

@@ -22,6 +22,10 @@ section:not(:first-child) {
     @apply  flex flex-col gap-y-3;
 }
 
+img {
+    @apply -z-50;
+}
+
 h1 {
     @apply text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none;
 }
