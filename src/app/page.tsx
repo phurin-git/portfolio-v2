@@ -16,7 +16,7 @@ export default function Home() {
       <LeftDock />
       <RightDock />
       <Nav />
-      <Theme />
+      <Theme className='fixed top-10 right-10 size-7 max-sm:hidden'/>
       <main className='px-6'>
         <Hero />
         <About />

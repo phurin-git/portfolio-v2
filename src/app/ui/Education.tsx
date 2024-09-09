@@ -11,15 +11,16 @@ const getCard = (data: {
     end: string;
 }, index: number) => (
     <Link key={index} href={data.href} target='_blank' rel='noopener noreferrer' className='flex gap-4'>
-        <div className='relative shrink-0 size-12'>
-            <Image src={data.logoUrl} alt='' fill />
+        <div className='relative shrink-0 size-14 rounded-full overflow-hidden'>
+            <Image src={data.logoUrl} alt='' fill className='bg-white'/>
         </div>
         <div className='w-full flex flex-col'>
             <div className='flex justify-between items-center gap-x-2 text-base'>
                 <h3 className='after:content-["_↗"]'>{data.school}</h3>
-                <p className='range text-xs sm:text-sm text-right'>{`${data.start} — ${data.end}`}</p>
+                <p className='max-sm:hidden range text-xs sm:text-sm text-right'>{`${data.start} — ${data.end}`}</p>
             </div>
             <h4 className='text-xs'>{data.degree}</h4>
+            <p className='sm:hidden range text-xs sm:text-sm text-left'>{`${data.start} — ${data.end}`}</p>
         </div>
     </Link>
 );

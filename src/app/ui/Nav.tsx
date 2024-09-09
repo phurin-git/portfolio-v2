@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import Theme from './Theme';
 import { data } from '../data/resume';
 
 const Nav = () => {
@@ -76,7 +77,7 @@ const Nav = () => {
                     return isContact;
             default:
                 break;
-        }
+        };
     };
 
     useEffect(() => {
@@ -102,19 +103,20 @@ const Nav = () => {
     );
 
     return (
-        <header className='sticky top-0 z-50 bg-white dark:bg-black px-6 max-sm:p-6 rounded-lg -mx-6 shadow-lg'>
+        <header className='sticky top-0 z-50 bg-white dark:bg-black px-6 max-sm:p-6 rounded-lg sm:-mx-6 shadow-lg transition-colors duration-300'>
             <nav>
+                <Theme className='absolute top-5 left-5 size-8 sm:hidden z-50'/>
                 <button type='button' onClick={() => setHamMenu(!hamMenu)} className='sm:hidden ml-auto flex flex-col items-end gap-1'>
                     <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>
                     <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>
-                    <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>                    
+                    <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>
                 </button>
-                <ul className={`flex flex-col sm:flex-row sm:justify-evenly items-center py-7 sm:py-3 bg-white dark:bg-black max-sm:gap-5 max-sm:absolute max-sm:left-0 max-sm:w-screen max-sm:overflow-y-scroll ${hamMenu ? 'max-sm:h-screen' : 'max-sm:h-0 max-sm:opacity-0'}`}>
+                <ul className={`flex flex-col sm:flex-row sm:justify-evenly items-center py-7 sm:py-3 bg-white dark:bg-black max-sm:gap-5 max-sm:absolute max-sm:left-0 max-sm:w-screen max-sm:overflow-y-scroll transition-colors duration-300 ${hamMenu ? 'max-sm:h-screen' : 'max-sm:h-0 max-sm:opacity-0'}`}>
                     {data.navBar.map(getNavButton)}
                 </ul>
             </nav>
         </header>
     );
-}
+};
 
 export default Nav;
