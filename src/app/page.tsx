@@ -1,4 +1,6 @@
+import { LeftDock, RightDock } from './ui/Dock';
 import Nav from './ui/Nav';
+import Theme from './ui/Theme';
 import Hero from './ui/Hero';
 import About from './ui/About';
 import Experience from './ui/Experience';
@@ -7,7 +9,6 @@ import Skills from './ui/Skills';
 import Projects from './ui/Projects';
 import Contact from './ui/Contact';
 import Footer from './ui/Footer';
-import { LeftDock, RightDock } from './ui/Dock';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <LeftDock />
       <RightDock />
       <Nav />
+      <Theme />
       <main className='px-6'>
         <Hero />
         <About />

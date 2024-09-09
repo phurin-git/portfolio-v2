@@ -19,23 +19,23 @@ const getCard = (data: {
         href: string;
     }[];
 }, index: number) => (
-    <div key={index} className='rounded-lg flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full'>
+    <div key={index} className='h-full rounded-lg flex flex-col overflow-hidden border dark:border-white/20 hover:shadow-lg transition-all ease-out duration-300'>
         <Link href={data.href} title={data.title} target='_blank' rel='noopener noreferrer' className='relative w-full h-40'>
-            <Image src={data.image} alt='' fill className='mx-auto object-cover object-top'/>
+            <Image src={data.image} alt='' fill className='object-cover object-top mx-auto'/>
         </Link>
-        <div className='flex flex-col space-y-1 px-2'>
-            <h3 className='font-semibold tracking-tight mt-1 text-base'>{data.title}</h3>
-            <Markdown className='text-pretty text-xs text-muted-foreground dark:prose-invert'>{data.description}</Markdown>
+        <div className='flex grow flex-col space-y-1 px-2'>
+            <h3 className='font-semibold text-base tracking-tight mt-1'>{data.title}</h3>
+            <Markdown className='text-xs text-pretty'>{data.description}</Markdown>
         </div>
-        <div className='flex flex-wrap gap-1 text-pretty font-sans text-sm px-2 mt-2'>
+        <div className='flex flex-wrap gap-1 font-sans text-sm text-pretty px-2 mt-2'>
             {data.technologies.map((tech, index) => (
-                <div key={index} className='items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 px-1 py-0 text-xs bg-gray-100'>{tech}</div>
+                <div key={index} className='rounded-md items-center font-semibold text-xs bg-gray-400/20 hover:bg-gray-400/15 dark:bg-white/20 hover:dark:bg-white/15 px-2 py-1 transition-colors'>{tech}</div>
             ))}
         </div>
         <div className='flex items-center p-2 gap-1'>
             {data.links.map((link, index) => (
                 <Link key={index} title={link.type} href={link.href} target='_blank' rel='noopener noreferrer' className='flex flex-wrap gap-1 items-start'>
-                    <div className='rounded-md flex gap-2 items-center border text-white bg-black text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 px-2 py-1'>
+                    <div className='rounded-md flex gap-2 items-center border font-semibold text-xs text-white dark:text-black bg-black dark:bg-white transition-colors shadow px-2 py-1'>
                         <FontAwesomeIcon icon={link.type === 'website' ? faGlobe : faGithub} className='size-3' />
                         <small className='capitalize'>{link.type}</small>
                     </div>
@@ -48,7 +48,7 @@ const getCard = (data: {
 const Projects = () => (
     <section id='projects' className='space-y-12 -mt-24 pt-24 pb-12'>
         <div className='flex flex-col justify-center items-center space-y-2 text-center'>
-            <h2 className='rounded-lg bg-black text-white px-3 py-1 text-sm font-normal'>My Projects</h2>
+            <h2 className='rounded-lg bg-black dark:bg-white text-white dark:text-black px-3 py-1 text-sm font-normal'>My Projects</h2>
             <span className='text-3xl font-bold tracking-tighter sm:text-5xl'>Check out my latest work</span>
             <p className='text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center'>{`I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.`}</p>
         </div>
