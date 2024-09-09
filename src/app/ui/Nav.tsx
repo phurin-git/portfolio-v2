@@ -94,8 +94,8 @@ const Nav = () => {
     );
 
     return (
-        <header className='sticky top-0 z-50 bg-white px-6'>
-            <nav className='max-sm:p-6 rounded-lg -mx-6 shadow-lg'>
+        <header className='sticky top-0 z-50 bg-white px-6 max-sm:p-6 rounded-lg -mx-6 shadow-lg'>
+            <nav>
                 <button type='button' onClick={() => setHamMenu(!hamMenu)} className='sm:hidden ml-auto flex flex-col items-end gap-1'>
                     <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black' : 'bg-gray-500'}`}></div>
                     <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black' : 'bg-gray-500'}`}></div>
