@@ -51,7 +51,7 @@ const Nav = () => {
     // Disable scroll when hamMenu is true
     useEffect(() => {
         if (hamMenu) {
-            document.body.style.overflow = 'max-sm:hidden';
+            document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = '';
         }
@@ -79,37 +79,29 @@ const Nav = () => {
         }
     };
 
-    useEffect(() => {
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-          } else {
-            document.documentElement.classList.remove('dark')
-          }
-    } , []);
-    
     const getNavButton = (data: {
         name: string;
         url: string
     }, index: number) => (
 
         data.name === 'Resume'
-        ? <li key={index} className='flex bg-black dark:bg-white rounded-md'>
-            <Link href={data.url} target='_blank' rel='noopener noreferrer' className='px-12 sm:px-4 py-5 sm:py-3 border border-black dark:border-white rounded-md hover:-translate-x-1 hover:-translate-y-1 transition-transform bg-white dark:bg-black font-mono'>{data.name}</Link>
+        ? <li key={index} className='flex bg-black rounded-md'>
+            <Link href={data.url} target='_blank' rel='noopener noreferrer' className='px-12 sm:px-4 py-5 sm:py-3 border border-black rounded-md hover:-translate-x-1 hover:-translate-y-1 transition-transform bg-white font-mono'>{data.name}</Link>
         </li>
         : <li key={index} onClick={() => setHamMenu(!hamMenu)} className='flex'>
-            <Link href={data.url} className={`p-[10px] transition-colors hover:text-black dark:hover:text-white ${isActive(data.name) ? 'text-black dark:text-white' : 'text-gray-500'}`}>{data.name}</Link>
+            <Link href={data.url} className={`p-[10px] transition-colors  ${isActive(data.name) ? 'text-black' : 'text-gray-500'}`}>{data.name}</Link>
         </li>
     );
 
     return (
-        <header className='sticky top-0 z-50 bg-white dark:bg-black px-6 max-sm:p-6 rounded-lg -mx-6 shadow-lg'>
+        <header className='sticky top-0 z-50 bg-white px-6 max-sm:p-6 rounded-lg -mx-6 shadow-lg'>
             <nav>
                 <button type='button' onClick={() => setHamMenu(!hamMenu)} className='sm:hidden ml-auto flex flex-col items-end gap-1'>
-                    <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>
-                    <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>
-                    <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>                    
+                    <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black' : 'bg-gray-500'}`}></div>
+                    <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black' : 'bg-gray-500'}`}></div>
+                    <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black' : 'bg-gray-500'}`}></div>                    
                 </button>
-                <ul className={`flex flex-col sm:flex-row sm:justify-evenly items-center py-7 sm:py-3 bg-white dark:bg-black max-sm:gap-5 max-sm:absolute max-sm:left-0 max-sm:w-screen max-sm:overflow-y-scroll ${hamMenu ? 'max-sm:h-screen' : 'max-sm:h-0 max-sm:opacity-0'}`}>
+                <ul className={`flex flex-col sm:flex-row sm:justify-evenly items-center py-7 sm:py-3 transition-all duration-300 bg-white max-sm:gap-5 max-sm:absolute max-sm:left-0 max-sm:w-screen max-sm:overflow-y-scroll ${hamMenu ? 'max-sm:h-screen' : 'max-sm:h-0 max-sm:opacity-0'}`}>
                     {data.navBar.map(getNavButton)}
                 </ul>
             </nav>

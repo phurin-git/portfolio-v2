@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    @apply transition-colors duration-300;
+    @apply text-[#08090A];
 }
 
 .range {
@@ -43,7 +43,7 @@ p {
 }
 
 #about a {
-    @apply underline;
+    @apply underline text-[#111827];
 }
 
 span {
@@ -55,5 +55,5 @@ footer {
 }
 
 footer a {
-    @apply font-medium hover:text-black dark:hover:text-white;
+    @apply font-medium hover:text-black;
 }
