@@ -11,6 +11,10 @@ const getFaElement = (data: {name: string, url: string, icon: IconDefinition}) =
     </li>
 )
 
+const getLinkElement = (label: string, url: string) => (
+    <Link href={url} title={label} target='_blank' rel='noopener noreferrer' className='transition-colors'>{label}</Link>
+)
+
 const Footer = () => (
     <footer className='flex flex-col p-4 items-center'>
         <ul className='w-full max-w-72 flex justify-center md:hidden mb-2'>
@@ -19,7 +23,7 @@ const Footer = () => (
             {getFaElement(data.contacts.social.Instagram)}
             {getFaElement(data.contacts.social.Linkedin)}
         </ul>
-        <p className='text-center'>Inspired by <Link href='https://portfolio-magicui.vercel.app/' target='_blank' rel='noopener noreferrer'>Dillion Verma</Link> and <Link href='https://v4.brittanychiang.com/' target='_blank' rel='noopener noreferrer'>Brittany Chiang</Link> the project is developed using <Link href='https://code.visualstudio.com/' target='_blank' rel='noopener noreferrer'>Visual Studio Code</Link>, built with <Link href='https://nextjs.org/' target='_blank' rel='noopener noreferrer'>Next.js</Link> and <Link href='https://tailwindcss.com/' target='_blank' rel='noopener noreferrer'>Tailwind CSS</Link>, and deployed on <Link href='https://vercel.com/' target='_blank' rel='noopener noreferrer'>Vercel</Link>.</p>
+        <p className='text-center'>Inspired by {getLinkElement('Dillion Verma', 'https://portfolio-magicui.vercel.app/')} and {getLinkElement('Brittany Chiang', 'https://v4.brittanychiang.com/')} the project is developed using {getLinkElement('Visual Studio Code', 'https://code.visualstudio.com/')}, built with {getLinkElement('Next.js', 'https://nextjs.org/')} and {getLinkElement('Tailwind CSS', 'https://tailwindcss.com/')}, and deployed on {getLinkElement('Vercel','https://vercel.com/')}.</p>
     </footer>
 );
 

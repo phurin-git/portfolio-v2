@@ -29,7 +29,7 @@ const getCard = (data: {
         </div>
         <div className='flex flex-wrap gap-1 font-sans text-sm text-pretty px-2 mt-2'>
             {data.technologies.map((tech, index) => (
-                <div key={index} className='rounded-md items-center font-semibold text-xs bg-gray-400/20 hover:bg-gray-400/15 dark:bg-white/20 hover:dark:bg-white/15 px-2 py-1 transition-colors'>{tech}</div>
+                <div key={index} className='rounded-md items-center font-semibold text-xs text-black dark:text-white bg-gray-400/20 hover:bg-gray-400/15 dark:bg-white/20 hover:dark:bg-white/15 px-2 py-1 transition-colors'>{tech}</div>
             ))}
         </div>
         <div className='flex items-center p-2 gap-1'>
@@ -53,7 +53,7 @@ const Projects = () => (
             <p className='text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center'>{`I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.`}</p>
         </div>
         <div className='grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto'>
-            {data.projects.reverse().map(getCard)}
+            {data.projects.map(getCard)}
         </div>
     </section>
 );

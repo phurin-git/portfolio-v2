@@ -14,6 +14,7 @@ const Theme = ({className}: {className: string}) => {
     return (
         <button
         type="button"
+        title='Change theme'
         onClick={toggleTheme}
         className={`${className} rounded-full flex justify-center items-center transition-transform duration-500 ${isRotated ? 'rotate-180' : ''}`}
         >

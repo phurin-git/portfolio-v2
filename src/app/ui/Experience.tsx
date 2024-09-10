@@ -31,7 +31,7 @@ const getCard = (data: {
 const Experience = () => (
     <section id='experience' className='-mt-24 pt-24'>
         <h2>Work Experience</h2>
-        {data.works.reverse().map(getCard)}
+        {data.works.map(getCard)}
     </section>
 );
 

@@ -84,7 +84,7 @@ export const data = {
             end: "Jul 2024",
             description: "Installed and wired ASRS electrical components, programmed PLC and HMI for control, and integrated ASRS with WMS, WCS, and ERP systems. Conducted hardware and software testing to validate performance, trained customers on operation and maintenance, and managed the go-live process while monitoring initial performance"
         },
-    ],
+    ].reverse(),
     education: [
         {
             school: "Kasetsart University",
@@ -94,7 +94,7 @@ export const data = {
             start: "2019",
             end: "2023",
         },
-    ],
+    ].reverse(),
     projects: [
         {
             title: "Portfolio-v1",
@@ -172,5 +172,5 @@ export const data = {
                 },
             ],
         },
-    ],
+    ].reverse(),
 };

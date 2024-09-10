@@ -94,8 +94,8 @@ const Nav = () => {
     }, index: number) => (
 
         data.name === 'Resume'
-        ? <li key={index} className='flex bg-black dark:bg-white rounded-md'>
-            <Link href={data.url} target='_blank' rel='noopener noreferrer' className='px-12 sm:px-4 py-5 sm:py-3 border border-black dark:border-white rounded-md hover:-translate-x-1 hover:-translate-y-1 transition-transform bg-white dark:bg-black font-mono'>{data.name}</Link>
+        ? <li key={index} onClick={() => setHamMenu(!hamMenu)} className='rounded-md flex bg-black dark:bg-white'>
+            <Link href={data.url} target='_blank' rel='noopener noreferrer' className='rounded-md border border-black dark:border-white px-12 sm:px-4 py-5 sm:py-3 font-mono text-black dark:text-white bg-white dark:bg-black transition-all hover:-translate-x-1 hover:-translate-y-1'>{data.name}</Link>
         </li>
         : <li key={index} onClick={() => setHamMenu(!hamMenu)} className='flex'>
             <Link href={data.url} className={`p-[10px] transition-colors hover:text-black dark:hover:text-white ${isActive(data.name) ? 'text-black dark:text-white' : 'text-gray-500'}`}>{data.name}</Link>
@@ -106,7 +106,7 @@ const Nav = () => {
         <header className='sticky top-0 z-50 bg-white dark:bg-black px-6 max-sm:p-6 rounded-lg sm:-mx-6 shadow-lg transition-colors duration-300'>
             <nav>
                 <Theme className='absolute top-5 left-5 size-8 sm:hidden z-50'/>
-                <button type='button' onClick={() => setHamMenu(!hamMenu)} className='sm:hidden ml-auto flex flex-col items-end gap-1'>
+                <button type='button' title='Toggle nav menu' onClick={() => setHamMenu(!hamMenu)} className='sm:hidden ml-auto flex flex-col items-end gap-1'>
                     <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>
                     <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>
                     <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>

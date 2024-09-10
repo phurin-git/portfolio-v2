@@ -22,6 +22,6 @@ export const LeftDock = () => (
 
 export const RightDock = () => (
     <div className='fixed bottom-0 right-5 lg:right-10 w-10 hidden md:flex flex-col after:w-px after:h-24 after:m-auto after:mt-5 after:bg-black after:dark:bg-white'>
-        <Link href='mailto:phurin.nrt@gmail.com' className='[writing-mode:vertical-rl] mx-auto my-5 hover:-translate-y-1 transition-transform font-mono'>{data.contacts.email}</Link>
+        <Link href='mailto:phurin.nrt@gmail.com' title='My email' className='[writing-mode:vertical-rl] mx-auto my-5 hover:-translate-y-1 transition-transform font-mono'>{data.contacts.email}</Link>
     </div>
 );
