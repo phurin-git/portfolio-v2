@@ -12,15 +12,17 @@ const Theme = ({className}: {className: string}) => {
     };
 
     return (
-        <button
-        type="button"
-        title='Change theme'
-        onClick={toggleTheme}
-        className={`${className} rounded-full flex justify-center items-center`}
-        >
-            <FontAwesomeIcon icon={faSun} className={`absolute opacity-100 dark:opacity-0 size-full transition-transform duration-500 ${isRotated ? '-rotate-[360deg] sm:rotate-[360deg]' : ''}`} />
-            <FontAwesomeIcon icon={faMoon} className={`absolute opacity-0 dark:opacity-100 size-full transition-transform duration-500 ${isRotated ? '' : '-rotate-[360deg] sm:rotate-[360deg]'}`} />
-        </button>
+        <div className={className}>
+            <button
+            type="button"
+            title='Change theme'
+            onClick={toggleTheme}
+            className={`size-8 rounded-full flex justify-center items-center`}
+            >
+                <FontAwesomeIcon icon={faSun} className={`absolute opacity-100 dark:opacity-0 size-full transition-transform duration-500 ${isRotated ? '-rotate-[360deg] sm:rotate-[360deg]' : ''}`} />
+                <FontAwesomeIcon icon={faMoon} className={`absolute opacity-0 dark:opacity-100 size-full transition-transform duration-500 ${isRotated ? '' : '-rotate-[360deg] sm:rotate-[360deg]'}`} />
+            </button>
+        </div>
     );
 };
 

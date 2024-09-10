@@ -16,7 +16,7 @@ export default function Home() {
       <LeftDock />
       <RightDock />
       <Nav />
-      <Theme className='fixed top-10 right-10 size-7 max-sm:hidden'/>
+      <Theme className='fixed top-0 sm:right-5 lg:right-10 hidden md:flex flex-col before:w-px before:h-24 before:m-auto before:mb-5 before:bg-black before:dark:bg-white max-sm:hidden'/>
       <main className='px-6'>
         <Hero />
         <About />

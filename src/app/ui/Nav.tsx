@@ -105,7 +105,7 @@ const Nav = () => {
     return (
         <header className='sticky top-0 z-50 bg-white dark:bg-black px-6 max-sm:p-6 rounded-lg sm:-mx-6 shadow-lg transition-colors duration-300'>
             <nav>
-                <Theme className='absolute top-5 left-5 size-8 sm:hidden z-50'/>
+                <Theme className='absolute top-5 left-5 sm:hidden z-50'/>
                 <button type='button' title='Toggle nav menu' onClick={() => setHamMenu(!hamMenu)} className='sm:hidden ml-auto flex flex-col items-end gap-1'>
                     <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>
                     <div className={`w-8 h-1 rounded-full transition-colors duration-300 ${hamMenu ? 'bg-black dark:bg-white' : 'bg-gray-500'}`}></div>
