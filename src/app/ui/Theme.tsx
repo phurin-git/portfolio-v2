@@ -16,10 +16,10 @@ const Theme = ({className}: {className: string}) => {
         type="button"
         title='Change theme'
         onClick={toggleTheme}
-        className={`${className} rounded-full flex justify-center items-center transition-transform duration-500 ${isRotated ? 'rotate-180' : ''}`}
+        className={`${className} rounded-full flex justify-center items-center`}
         >
-            <FontAwesomeIcon icon={faSun} className='absolute opacity-100 dark:opacity-0 size-full' />
-            <FontAwesomeIcon icon={faMoon} className='absolute opacity-0 dark:opacity-100 size-full' />
+            <FontAwesomeIcon icon={faSun} className={`absolute opacity-100 dark:opacity-0 size-full transition-transform duration-500 ${isRotated ? '-rotate-[360deg] sm:rotate-[360deg]' : ''}`} />
+            <FontAwesomeIcon icon={faMoon} className={`absolute opacity-0 dark:opacity-100 size-full transition-transform duration-500 ${isRotated ? '' : '-rotate-[360deg] sm:rotate-[360deg]'}`} />
         </button>
     );
 };
