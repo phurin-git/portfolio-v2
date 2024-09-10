@@ -51,7 +51,6 @@ const Nav = () => {
     
     // Disable scroll when hamMenu is true
     useEffect(() => {
-        console.log(hamMenu);
         document.body.classList.toggle('max-sm:overflow-hidden', hamMenu);
     
         // Cleanup function to enable scroll when component unmounts
