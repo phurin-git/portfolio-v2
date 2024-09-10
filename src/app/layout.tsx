@@ -15,17 +15,18 @@ export const metadata: Metadata = {
   keywords: ["phurin", "nararat", "Phurin", "Nararat", "Phurin Nararat", "fullstack", "engineer", "portfolio", "resume",],
   publisher: 'Vercel',
   openGraph: {
-    images: [data.url],
+    type: 'website',
+    url: data.url,
     title: data.name,
     description: data.description,
-    url: data.url,
-    type: 'website',
+    siteName: data.name,
+    images: [data.url],
   },
   twitter: {
-    images: [data.url],
     card: "summary_large_image",
     title: data.name,
     description: data.description,
+    images: [data.url],
   },
 };
 
