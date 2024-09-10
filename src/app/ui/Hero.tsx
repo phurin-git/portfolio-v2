@@ -8,7 +8,7 @@ const Hero = () => (
             <span>{data.description}</span>
         </hgroup>
         <div className='relative size-28 rounded-full shrink-0 overflow-hidden border'>
-            <Image src={data.avatarUrl} alt={data.name} fill priority quality={100}/>
+            <Image src={data.avatarUrl} alt={data.name} quality={100} placeholder='blur' priority />
         </div>
     </section>
 )

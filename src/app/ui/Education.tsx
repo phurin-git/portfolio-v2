@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { data } from '../data/resume';
 
+const getLinkElement = (href: string, title: string, children: React.ReactNode, className: string = '') => <Link href={href} title={title} target='_blank' rel='noopener noreferrer' className={className}>{children}</Link>
+
 const getCard = (data: {
     school: string;
     href: string;
@@ -10,19 +12,19 @@ const getCard = (data: {
     start: string;
     end: string;
 }, index: number) => (
-    <Link key={index} href={data.href} target='_blank' rel='noopener noreferrer' className='flex gap-4'>
-        <div className='relative shrink-0 size-14 rounded-full overflow-hidden'>
-            <Image src={data.logoUrl} alt='' fill className='bg-white'/>
-        </div>
+    <div key={index} className='flex gap-4'>
+        {getLinkElement(data.href, data.school,
+            <Image src={data.logoUrl} alt='' fill quality={100} blurDataURL='data:...' placeholder='blur' className='bg-white' />
+        , 'relative shrink-0 size-14 rounded-full overflow-hidden')}
         <div className='w-full flex flex-col'>
             <div className='flex justify-between items-center gap-x-2 text-base'>
-                <h3 className='after:content-["_↗"]'>{data.school}</h3>
+                {getLinkElement(data.href, data.school, <h3 className='after:content-["_↗"]'>{data.school}</h3>)}
                 <p className='max-sm:hidden range text-xs sm:text-sm text-right'>{`${data.start} — ${data.end}`}</p>
             </div>
-            <h4 className='text-xs'>{data.degree}</h4>
+            {getLinkElement(data.href, data.school, <h4 className='text-xs'>{data.degree}</h4>)}
             <p className='sm:hidden range text-xs sm:text-sm text-left'>{`${data.start} — ${data.end}`}</p>
         </div>
-    </Link>
+    </div>
 );
 
 const Education = () => (

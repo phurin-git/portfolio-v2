@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
@@ -11,16 +11,16 @@ const getCard = (data: {
     dates: string;
     description: string;
     technologies: string[];
-    image: string;
+    image: StaticImageData;
     video: string;
     links: {
         type: string;
         href: string;
     }[];
 }, index: number) => (
-    <div key={index} className='rounded-lg flex flex-col overflow-hidden border dark:border-white/20 dark:shadow-white/60 hover:shadow-lg transition-all ease-out duration-300'>
-        <Link href={data.href} title={data.title} target='_blank' rel='noopener noreferrer' className='relative w-full h-40'>
-            <Image src={data.image} alt='' fill className='object-cover object-top mx-auto' quality={100}/>
+    <div key={index} className='rounded-lg flex flex-col border dark:border-white/20 dark:shadow-white/60 hover:shadow-lg transition-all ease-out duration-300'>
+        <Link href={data.href} title={data.title} target='_blank' rel='noopener noreferrer' className='w-full aspect-[2/1] overflow-hidden'>
+            <Image src={data.image} alt='' quality={100} placeholder='blur' />
         </Link>
         <div className='flex flex-col grow space-y-1 px-2'>
             <h3 className='font-semibold text-base tracking-tight mt-1'>{data.title}</h3>
