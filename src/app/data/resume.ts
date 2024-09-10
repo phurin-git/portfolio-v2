@@ -99,8 +99,8 @@ export const data = {
         {
             title: "Portfolio-v1",
             href: "https://portfolio-phurin-nararats-projects.vercel.app/",
-            dates: "",
-            description: "",
+            dates: "23 — 28 Jul 2024",
+            description: "Discover my journey as a web developer with Portfolio V1, a personal project designed to showcase my skills, projects, and professional growth. This project serves as a comprehensive introduction to my work and capabilities in web development.",
             technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
             image: "/og/portfolio-v1.svg",
             video: "",
@@ -118,8 +118,8 @@ export const data = {
         {
             title: "Space tourism website",
             href: "https://phurin-git.github.io/femt-space-tourism-website/",
-            dates: "",
-            description: "",
+            dates: "9 — 18 Aug 2024",
+            description: "Explore the wonders of space travel with the Space Tourism Website, a project developed as a solution to the Space Tourism Website challenge on Frontend Mentor.",
             technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
             image: "/og/space-tourism.svg",
             video: "",
@@ -137,8 +137,8 @@ export const data = {
         {
             title: "Positivus",
             href: "https://positivus-puce.vercel.app/",
-            dates: "",
-            description: "",
+            dates: "24 Aug — 2 Sep 2024",
+            description: "Positivus is a web application designed to spread positivity and inspire users through uplifting quotes and messages. This project was developed to practice and enhance my frontend development skills using an existing design from the Figma community.",
             technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
             image: "/og/positivus.svg",
             video: "",
@@ -156,8 +156,8 @@ export const data = {
         {
             title: "Smart Agro",
             href: "https://smart-argo.vercel.app/",
-            dates: "",
-            description: "",
+            dates: "2 — 4 Sep 2024",
+            description: "Smart Agro is a web application designed to showcase organic food and agriculture farm services. This project was developed to practice and enhance my frontend development skills using an existing design from the Figma community.",
             technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
             image: "/og/smart-agro.svg",
             video: "",

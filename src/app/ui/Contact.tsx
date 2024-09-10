@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { data } from '../data/resume';
 
 const Contact = () => (
-    <section id='contact' className='space-y-12 -mt-24 pt-24 pb-12'>
+    <section id='contact' className='space-y-12 py-24'>
         <div className='flex flex-col justify-center items-center space-y-2 text-center'>
             <h2 className='rounded-lg bg-black dark:bg-white text-white dark:text-black px-3 py-1 text-sm font-normal'>Contact</h2>
             <span className='text-3xl font-bold tracking-tighter sm:text-5xl'>Get in Touch</span>

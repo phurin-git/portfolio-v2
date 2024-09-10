@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Markdown from 'react-markdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -25,7 +24,8 @@ const getCard = (data: {
         </Link>
         <div className='flex grow flex-col space-y-1 px-2'>
             <h3 className='font-semibold text-base tracking-tight mt-1'>{data.title}</h3>
-            <Markdown className='text-xs text-pretty'>{data.description}</Markdown>
+            <time className='text-xs range'>{data.dates}</time>
+            <p className='text-xs text-wrap opacity-80'>{data.description}</p>
         </div>
         <div className='flex flex-wrap gap-1 font-sans text-sm text-pretty px-2 mt-2'>
             {data.technologies.map((tech, index) => (
@@ -46,7 +46,7 @@ const getCard = (data: {
 );
 
 const Projects = () => (
-    <section id='projects' className='space-y-12 -mt-24 pt-24 pb-12'>
+    <section id='projects' className='space-y-12 -mt-24 py-24'>
         <div className='flex flex-col justify-center items-center space-y-2 text-center'>
             <h2 className='rounded-lg bg-black dark:bg-white text-white dark:text-black px-3 py-1 text-sm font-normal'>My Projects</h2>
             <span className='text-3xl font-bold tracking-tighter sm:text-5xl'>Check out my latest work</span>
