@@ -5,6 +5,9 @@ import {
     faLinkedin as Linkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import me from '../images/me.png';
+import company1 from '../images/logo/melft.svg';
+import company2 from '../images/logo/sst.svg';
+import school1 from '../images/logo/ku.svg';
 import project1 from '../images/og/portfolio-v1.png';
 import project2 from '../images/og/space-tourism.png';
 import project3 from '../images/og/positivus.png';
@@ -13,7 +16,7 @@ import project4 from '../images/og/smart-agro.png';
 export const data = {
     name: "Phurin Nararat",
     initials: "PN",
-    url: "https://phurinnararat.works",
+    url: "https://www.phurinnararat.works",
     location: "Bang Bo, Samut Prakan, Thailand",
     locationUrl: "https://maps.app.goo.gl/gT4UEUKwuzUB8Fdi7",
     description: "Excited Automation Engineer moving into Full Stack Engineering. Eager to keep learning and loves to code.",
@@ -74,7 +77,7 @@ export const data = {
             href: "https://www.mitsubishifa.co.th/",
             location: "Phra Khanong, Bangkok, Thailand",
             title: "Internship",
-            logoUrl: "/logo/melft.svg",
+            logoUrl: company1,
             start: "Aug 2022",
             end: "Nov 2022",
             description: "Design SCADA system, sharing techniques and providing user manuals to customers and team members. Also designed SCADA prototype for company's decarbonization project."
@@ -84,7 +87,7 @@ export const data = {
             href: "https://www.somboonsiasuntech.co.th/",
             location: "Bang Chalong, Samut Prakan, Thailand",
             title: "Automation Engineer",
-            logoUrl: "/logo/sst.svg",
+            logoUrl: company2,
             start: "Jun 2023",
             end: "Jul 2024",
             description: "Installed and wired ASRS electrical components, programmed PLC and HMI for control, and integrated ASRS with WMS, WCS, and ERP systems. Conducted hardware and software testing to validate performance, trained customers on operation and maintenance, and managed the go-live process while monitoring initial performance"
@@ -95,7 +98,7 @@ export const data = {
             school: "Kasetsart University",
             href: "https://www.ku.ac.th/",
             degree: "B.Eng. in Robotic and Automation Systems Engineering",
-            logoUrl: "/logo/ku.svg",
+            logoUrl: school1,
             start: "2019",
             end: "2023",
         },

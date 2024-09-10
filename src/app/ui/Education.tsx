@@ -14,7 +14,7 @@ const getCard = (data: {
 }, index: number) => (
     <div key={index} className='flex gap-4'>
         {getLinkElement(data.href, data.school,
-            <Image src={data.logoUrl} alt='' fill quality={100} blurDataURL='data:...' placeholder='blur' className='bg-white' />
+            <Image src={data.logoUrl} alt={data.school + ' Logo'} fill quality={100} blurDataURL='data:...' placeholder='blur' className='bg-white' />
         , 'relative shrink-0 size-14 rounded-full overflow-hidden')}
         <div className='w-full flex flex-col'>
             <div className='flex justify-between items-center gap-x-2 text-base'>

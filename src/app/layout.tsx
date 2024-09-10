@@ -8,6 +8,25 @@ const inter = Inter({ subsets: ["latin"], preload: true });
 export const metadata: Metadata = {
   title: data.name,
   description: data.description,
+  authors: [{ name: data.name, url: data.url }],
+  abstract: 'Portfolio of a fullstack engineer',
+  creator: data.name,
+  generator: "Next.js",
+  keywords: ["phurin", "nararat", "Phurin", "Nararat", "Phurin Nararat", "fullstack", "engineer", "portfolio", "resume",],
+  publisher: 'Vercel',
+  openGraph: {
+    images: [data.url],
+    title: data.name,
+    description: data.description,
+    url: data.url,
+    type: 'website',
+  },
+  twitter: {
+    images: [data.url],
+    card: "summary_large_image",
+    title: data.name,
+    description: data.description,
+  },
 };
 
 export default function RootLayout({
