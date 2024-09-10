@@ -20,7 +20,7 @@ const getCard = (data: {
 }, index: number) => (
     <div key={index} className='rounded-lg flex flex-col overflow-hidden border dark:border-white/20 hover:shadow-lg transition-all ease-out duration-300'>
         <Link href={data.href} title={data.title} target='_blank' rel='noopener noreferrer' className='relative w-full h-40'>
-            <Image src={data.image} alt='' fill className='object-cover object-top mx-auto'/>
+            <Image src={data.image} alt='' fill className='object-cover object-top mx-auto' quality={100}/>
         </Link>
         <div className='flex flex-col grow space-y-1 px-2'>
             <h3 className='font-semibold text-base tracking-tight mt-1'>{data.title}</h3>

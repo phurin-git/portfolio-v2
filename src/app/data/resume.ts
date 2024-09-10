@@ -13,7 +13,7 @@ export const data = {
     locationUrl: "https://maps.app.goo.gl/gT4UEUKwuzUB8Fdi7",
     description: "Excited Automation Engineer moving into Full Stack Engineering. Eager to keep learning and loves to code.",
     summary: "My journey into the tech world began during my college years, where I studied robotics and automation system engineering. I first learned C programming as my foundational programming language. Driven by my interest, I later learned Java and Python. I have programmed various microprocessors, controllers, single-board computers, and robot manipulators. I find coding in different programming languages enjoyable because it is logical, much like mathematics. However, I did not have ample time to fully explore it due to the demands of other departmental subjects.\nDuring my final year of study, I had the opportunity to intern at [Mitsubishi Electric Factory Automation Thailand](https://www.mitsubishifa.co.th/). Here, I worked on SCADA system design, encompassing both frontend (UI) and backend (transaction, SQL, AWS IoT, etc.) development. This experience felt similar to full-stack development.\nAfter graduating, I got a job in the field of automation, working on logistics and robotics at [Somboon Siasun Tech](https://www.somboonsiasuntech.co.th/). During my time there, I used my programming skills to help automate the commissioning and testing workflows for the systems my team and I installed onsite for customers.\nNowadays, I have decided to transition into the tech world and aim to become a full-stack engineer. I want to work in a field I love and continue learning.",
-    avatarUrl: "/me.svg",
+    avatarUrl: "/me.png",
     skills: [
         "TypeScript",
         "Tailwind CSS",
@@ -102,7 +102,7 @@ export const data = {
             dates: "23 — 28 Jul 2024",
             description: "Discover my journey as a web developer with Portfolio V1, a personal project designed to showcase my skills, projects, and professional growth. This project serves as a comprehensive introduction to my work and capabilities in web development.",
             technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-            image: "/og/portfolio-v1.svg",
+            image: "/og/portfolio-v1.png",
             video: "",
             links: [
                 {
@@ -121,7 +121,7 @@ export const data = {
             dates: "9 — 18 Aug 2024",
             description: "Explore the wonders of space travel with the Space Tourism Website, a project developed as a solution to the Space Tourism Website challenge on Frontend Mentor.",
             technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-            image: "/og/space-tourism.svg",
+            image: "/og/space-tourism.png",
             video: "",
             links: [
                 {
@@ -140,7 +140,7 @@ export const data = {
             dates: "24 Aug — 2 Sep 2024",
             description: "Positivus is a web application designed to spread positivity and inspire users through uplifting quotes and messages. This project was developed to practice and enhance my frontend development skills using an existing design from the Figma community.",
             technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-            image: "/og/positivus.svg",
+            image: "/og/positivus.png",
             video: "",
             links: [
                 {
@@ -159,7 +159,7 @@ export const data = {
             dates: "2 — 4 Sep 2024",
             description: "Smart Agro is a web application designed to showcase organic food and agriculture farm services. This project was developed to practice and enhance my frontend development skills using an existing design from the Figma community.",
             technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-            image: "/og/smart-agro.svg",
+            image: "/og/smart-agro.png",
             video: "",
             links: [
                 {
