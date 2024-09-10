@@ -43,10 +43,8 @@ const Nav = () => {
     }, [handleCurrentNavState]);
 
     useEffect(() => {
-        window.addEventListener('scrollend', handleCurrentNavState)
-        return () => {
-            window.removeEventListener('scrollend', handleCurrentNavState)
-        }  
+        window.addEventListener('scrollend', handleCurrentNavState);
+        return () => window.removeEventListener('scrollend', handleCurrentNavState);
     }, [handleCurrentNavState]);
     
     // Disable scroll when hamMenu is true

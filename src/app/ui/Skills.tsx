@@ -1,4 +1,5 @@
 import { data } from '../data/resume';
+
 const Skills = () => (
     <section id='skills'>
         <h2>Skills</h2>
@@ -8,6 +9,6 @@ const Skills = () => (
             ))}
         </ul>
     </section>
-)
+);
 
 export default Skills;

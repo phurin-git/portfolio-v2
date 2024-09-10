@@ -11,6 +11,6 @@ const Hero = () => (
             <Image src={data.avatarUrl} alt={data.name} quality={100} placeholder='blur' priority />
         </div>
     </section>
-)
+);
 
 export default Hero;

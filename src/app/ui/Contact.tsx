@@ -12,6 +12,6 @@ const Contact = () => (
             <Link href={`mailto:${data.contacts.email}`} className='rounded-md border border-black dark:border-white font-mono text-black dark:text-white bg-white dark:bg-black px-[28px] py-[20px] m-auto transition-all hover:-translate-x-1 hover:-translate-y-1'>Say Hello</Link>
         </div>
     </section>
-)
+);
 
 export default Contact;

@@ -9,11 +9,11 @@ const getFaElement = (data: {name: string, url: string, icon: IconDefinition}) =
             <FontAwesomeIcon icon={data.icon} className='w-5 h-auto mx-3 hover:-translate-y-1 transition-transform'/>
         </Link>
     </li>
-)
+);
 
 const getLinkElement = (label: string, url: string) => (
     <Link href={url} title={label} target='_blank' rel='noopener noreferrer' className='transition-colors'>{label}</Link>
-)
+);
 
 const Footer = () => (
     <footer className='flex flex-col p-4 items-center'>

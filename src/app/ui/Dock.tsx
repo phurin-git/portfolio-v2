@@ -9,7 +9,7 @@ const getFaElement = (data: {name: string, url: string, icon: IconDefinition}) =
             <FontAwesomeIcon icon={data.icon} className='size-5' />
         </Link>
     </li>
-)
+);
 
 export const LeftDock = () => (
     <ul className='fixed bottom-0 sm:left-5 lg:left-10 hidden md:flex flex-col after:w-px after:h-24 after:m-auto after:mt-5 after:bg-black after:dark:bg-white'>

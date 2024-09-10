@@ -9,6 +9,8 @@ import Skills from './ui/Skills';
 import Projects from './ui/Projects';
 import Contact from './ui/Contact';
 import Footer from './ui/Footer';
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function Home() {
   return (
@@ -27,6 +29,8 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 };

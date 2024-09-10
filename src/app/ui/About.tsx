@@ -12,6 +12,6 @@ const About = () => (
               ),
         }}>{data.summary}</Markdown>
     </section>
-)
+);
 
 export default About;
