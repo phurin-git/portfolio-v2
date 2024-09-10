@@ -19,10 +19,10 @@ const getCard = (data: {
         <div className='w-full flex flex-col'>
             <div className='flex justify-between items-center gap-x-2 text-base'>
                 {getLinkElement(data.href, data.school, <h3 className='after:content-["_↗"]'>{data.school}</h3>)}
-                <p className='max-sm:hidden range text-xs sm:text-sm text-right'>{`${data.start} — ${data.end}`}</p>
+                <p className='max-sm:hidden font-mono text-gray text-xs sm:text-sm text-right'>{`${data.start} — ${data.end}`}</p>
             </div>
             {getLinkElement(data.href, data.school, <h4 className='text-xs'>{data.degree}</h4>)}
-            <p className='sm:hidden range text-xs sm:text-sm text-left'>{`${data.start} — ${data.end}`}</p>
+            <p className='sm:hidden font-mono text-gray text-xs sm:text-sm text-left'>{`${data.start} — ${data.end}`}</p>
         </div>
     </div>
 );

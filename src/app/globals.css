@@ -10,8 +10,8 @@ body {
     @apply transition-colors duration-300;
 }
 
-.range {
-    @apply font-mono text-gray-500;
+.text-gray {
+    @apply text-gray-600 dark:text-gray-300;
 }
 
 section {
@@ -48,10 +48,6 @@ p {
 
 span {
     @apply max-w-[600px] md:text-xl;
-}
-
-footer {
-    @apply text-gray-500;
 }
 
 footer a {

@@ -89,7 +89,7 @@ const Nav = () => {
             <a href={data.url} target='_blank' rel='noopener noreferrer' className='rounded-md border border-black dark:border-white px-12 sm:px-4 py-5 sm:py-3 font-mono text-black dark:text-white bg-white dark:bg-black transition-all hover:-translate-x-1 hover:-translate-y-1'>{data.name}</a>
         </li>
         : <li key={index} onClick={() => setHamMenu(!hamMenu)} className='flex'>
-            <Link href={data.url} className={`p-[10px] transition-colors hover:text-black dark:hover:text-white ${isActive(data.name) ? 'text-black dark:text-white' : 'text-gray-500'}`}>{data.name}</Link>
+            <Link href={data.url} className={`p-[10px] transition-colors hover:text-black dark:hover:text-white ${isActive(data.name) ? 'text-black dark:text-white' : 'text-gray'}`}>{data.name}</Link>
         </li>
     );
 

@@ -16,7 +16,7 @@ const getLinkElement = (label: string, url: string) => (
 );
 
 const Footer = () => (
-    <footer className='flex flex-col p-4 items-center'>
+    <footer className='flex flex-col p-4 items-center text-gray'>
         <ul className='w-full max-w-72 flex justify-center md:hidden mb-2'>
             {getFaElement(data.contacts.social.Github)}
             {getFaElement(data.contacts.social.Facebook)}

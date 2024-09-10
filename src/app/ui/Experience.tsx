@@ -21,10 +21,10 @@ const getCard = (data: {
         <div className='flex flex-col'>
             <div className='flex justify-between items-center gap-x-2'>
                 {getLinkElement(data.href, data.company, <h3 className='after:content-["_↗"]'>{data.company}</h3>)}
-                <p className='max-sm:hidden range text-xs sm:text-sm text-right'>{`${data.start} — ${data.end}`}</p>
+                <p className='max-sm:hidden font-mono text-gray text-xs sm:text-sm text-right'>{`${data.start} — ${data.end}`}</p>
             </div>
             {getLinkElement(data.href, data.company, <h4 className='text-xs'>{data.title}</h4>)}
-            <p className='sm:hidden range text-xs sm:text-sm text-left'>{`${data.start} — ${data.end}`}</p>
+            <p className='sm:hidden font-mono text-gray text-xs sm:text-sm text-left'>{`${data.start} — ${data.end}`}</p>
             <p className='mt-2 text-xs sm:text-sm'>{data.description}</p>
         </div>
     </div>
