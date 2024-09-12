@@ -80,7 +80,7 @@ export const data = {
             logoUrl: company1,
             start: "Aug 2022",
             end: "Nov 2022",
-            description: "Design SCADA system, sharing techniques and providing user manuals to customers and team members. Also designed SCADA prototype for company's decarbonization project."
+            description: "Researched and documented SCADA design techniques using ICONICS GENESIS64, created user manuals tailored to customer needs, and designed SCADA systems based on specific requirements."
         },
         {
             company: "Somboon Siasun Tech",
@@ -90,7 +90,7 @@ export const data = {
             logoUrl: company2,
             start: "Jun 2023",
             end: "Jul 2024",
-            description: "Installed and wired ASRS electrical components, programmed PLC and HMI for control, and integrated ASRS with WMS, WCS, and ERP systems. Conducted hardware and software testing to validate performance, trained customers on operation and maintenance, and managed the go-live process while monitoring initial performance"
+            description: "Installed and wired electrical components for automated storage systems, programmed PLCs and HMIs to meet user needs, and integrated control systems with existing infrastructures to streamline workflows. And performed rigorous testing to ensure system reliability, trained customers for better system use, and managed the go-live process to ensure a smooth transition and prompt issue resolution."
         },
     ].reverse(),
     education: [
