@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
-import { data } from '../data/resume';
+import getLinkElement from '../LinkElement';
+import { data } from '../../data/resume';
 
 const getFaElement = (data: {name: string, url: string, icon: IconDefinition}) => (
     <li>
@@ -9,10 +10,6 @@ const getFaElement = (data: {name: string, url: string, icon: IconDefinition}) =
             <FontAwesomeIcon icon={data.icon} className='w-5 h-auto mx-3 hover:-translate-y-1 transition-transform'/>
         </Link>
     </li>
-);
-
-const getLinkElement = (label: string, url: string) => (
-    <Link href={url} title={label} target='_blank' rel='noopener noreferrer' className='transition-colors'>{label}</Link>
 );
 
 const Footer = () => (
@@ -23,7 +20,7 @@ const Footer = () => (
             {getFaElement(data.contacts.social.Instagram)}
             {getFaElement(data.contacts.social.Linkedin)}
         </ul>
-        <p className='text-center'>Inspired by {getLinkElement('Dillion Verma', 'https://portfolio-magicui.vercel.app/')} and {getLinkElement('Brittany Chiang', 'https://v4.brittanychiang.com/')} the project is developed using {getLinkElement('Visual Studio Code', 'https://code.visualstudio.com/')}, built with {getLinkElement('Next.js', 'https://nextjs.org/')} and {getLinkElement('Tailwind CSS', 'https://tailwindcss.com/')}, and deployed on {getLinkElement('Vercel','https://vercel.com/')}.</p>
+        <p className='text-center'>Inspired by {getLinkElement('https://portfolio-magicui.vercel.app/', 'Dillion Verma', 'Dillion Verma', 'transition-colors')} and {getLinkElement('https://v4.brittanychiang.com/', 'Brittany Chiang', 'Brittany Chiang', 'transition-colors')} the project is developed using {getLinkElement('https://code.visualstudio.com/', 'Visual Studio Code', 'Visual Studio Code', 'transition-colors')}, built with {getLinkElement('https://nextjs.org/', 'Next.js', 'Next.js', 'transition-colors')} and {getLinkElement('https://tailwindcss.com/', 'Tailwind CSS', 'Tailwind CSS', 'transition-colors')}, and deployed on {getLinkElement('https://vercel.com/', 'Vercel', 'Vercel', 'transition-colors')}.</p>
     </footer>
 );
 

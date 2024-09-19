@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
-import { data } from '../data/resume';
+import { data } from '../../data/resume';
 
 const getFaElement = (data: {name: string, url: string, icon: IconDefinition}) => (
     <li className='size-10 flex justify-center items-center hover:-translate-y-1 transition-transform'>

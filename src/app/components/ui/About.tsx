@@ -1,5 +1,5 @@
 import Markdown from 'react-markdown';
-import { data } from '../data/resume';
+import { data } from '../../data/resume';
 
 const About = () => (
     <section id='about' className='-mt-24 pt-24'>

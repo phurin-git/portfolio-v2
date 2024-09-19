@@ -1,4 +1,4 @@
-import { data } from '../data/resume';
+import { data } from '../../data/resume';
 import Image from 'next/image';
 
 const Hero = () => (

@@ -1,14 +1,15 @@
-import { LeftDock, RightDock } from './ui/Dock';
-import Nav from './ui/Nav';
-import Theme from './ui/Theme';
-import Hero from './ui/Hero';
-import About from './ui/About';
-import Experience from './ui/Experience';
-import Education from './ui/Education'
-import Skills from './ui/Skills';
-import Projects from './ui/Projects';
-import Contact from './ui/Contact';
-import Footer from './ui/Footer';
+import { LeftDock, RightDock } from './components/ui/Dock';
+import Nav from './components/ui/Nav';
+import Theme from './components/ui/Theme';
+import Hero from './components/ui/Hero';
+import About from './components/ui/About';
+import Experience from './components/ui/Experience';
+import Education from './components/ui/Education'
+import Skills from './components/ui/Skills';
+import Projects from './components/ui/Projects';
+import AcademicProjects from './components/ui/AcademicProjects';
+import Contact from './components/ui/Contact';
+import Footer from './components/ui/Footer';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -26,6 +27,7 @@ export default function Home() {
         <Education />
         <Skills />
         <Projects />
+        <AcademicProjects />
         <Contact />
       </main>
       <Footer />

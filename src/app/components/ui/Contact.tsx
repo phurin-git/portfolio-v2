@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { data } from '../data/resume';
+import { data } from '../../data/resume';
 
 const Contact = () => (
     <section id='contact' className='space-y-12 py-24'>

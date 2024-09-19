@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Theme from './Theme';
-import { data } from '../data/resume';
+import { data } from '../../data/resume';
 
 const Nav = () => {
     const [isAbout, setIsAbout] = useState(false);

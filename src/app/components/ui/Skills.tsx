@@ -1,4 +1,4 @@
-import { data } from '../data/resume';
+import { data } from '../../data/resume';
 
 const Skills = () => (
     <section id='skills'>

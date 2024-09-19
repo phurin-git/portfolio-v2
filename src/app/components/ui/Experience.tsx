@@ -1,8 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { data } from '../data/resume';
-
-const getLinkElement = (href: string, title: string, children: React.ReactNode, className: string = '') => <Link href={href} title={title} target='_blank' rel='noopener noreferrer' className={className}>{children}</Link>;
+import getLinkElement from '../LinkElement';
+import { data } from '../../data/resume';
 
 const getCard = (data: {
     company: string;

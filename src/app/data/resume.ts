@@ -12,6 +12,10 @@ import project1 from '../images/og/portfolio-v1.png';
 import project2 from '../images/og/space-tourism.png';
 import project3 from '../images/og/positivus.png';
 import project4 from '../images/og/smart-agro.png';
+import academicProject1 from '../images/og/object-inspection-opencv-python.png';
+import academicProject2 from '../images/og/3dof-robot-kinematics-dynamics.png';
+import academicProject3 from '../images/og/scada-for-industrial-decarbonization.png';
+import academicProject4 from '../images/og/robot-control-motion-capture-mqtt-iot.png';
 
 export const data = {
     name: "Phurin Nararat",
@@ -177,6 +181,72 @@ export const data = {
                 {
                     type: "source",
                     href: "https://github.com/phurin-git/smart-argo/",
+                },
+            ],
+        },
+    ].reverse(),
+    academicProjects: [
+        {
+            title: "Object Inspection by using Python OpenCV",
+            href: "https://github.com/phurin-git/object-inspection-opencv-python",
+            dates: "within Dec 2021",
+            description: "Developing algorithms to detect and analyze the shapes and dimensions of objects, measured in millimeters, within video streams. Its goal was to enable accurate real-time inspection processes, specifically for applications in quality control, thereby enhancing operational efficiency and precision.",
+            technologies: ["Python", "OpenCV", "NumPy", "Tkinter"],
+            image: academicProject1,
+            video: "",
+            links: [
+                {
+                    type: "source",
+                    href: "https://github.com/phurin-git/object-inspection-opencv-python",
+                },
+            ],
+        },
+        {
+            title: "3DoF Robot Kinematics and Dynamics Design",
+            href: "https://github.com/phurin-git/3dof-robot-kinematics-dynamics",
+            dates: "Mar — Apr 2022",
+            description: "Designed with a focus on pick-and-place tasks and considering defined load and workspace parameters, this system utilizes Python SymPy to calculate Forward and Inverse Kinematics, Jacobian matrices, and Dynamic Equations using the Euler-Lagrange approach. The selection of actuators and transmission systems is optimized for enhancing robot performance and efficiency in task execution.",
+            technologies: ["Python", "SymPy", "NumPy"],
+            image: academicProject2,
+            video: "",
+            links: [
+                {
+                    type: "source",
+                    href: "https://github.com/phurin-git/3dof-robot-kinematics-dynamics",
+                },
+            ],
+        },
+        {
+            title: "SCADA for Industrial Decarbonization",
+            href: "https://www.mitsubishifa.co.th/en/news/genesis64%E2%84%A2-the-intelligent-software-of-mitsubishi-electric-takes-thai-entrepreneurs-through-the-",
+            dates: "Oct — Nov 2022",
+            description: "Developed a SCADA system for industrial clients to comply with TGO policies related to international emissions trading schemes, aimed at reducing greenhouse gas emissions. The system is designed to monitor real-time energy resource consumption and calculate carbon credit profits based on historical consumption data.",
+            technologies: ["MSSQL", "AWS IoT", "MQTT", "ICONICS GENESIS64"],
+            image: academicProject3,
+            video: "",
+            links: [
+                {
+                    type: "website",
+                    href: "https://www.mitsubishifa.co.th/en/news/genesis64%E2%84%A2-the-intelligent-software-of-mitsubishi-electric-takes-thai-entrepreneurs-through-the-",
+                },
+            ],
+        },
+        {
+            title: "Robot control by using Motion Capture and MQTT IoT Protocol",
+            href: "https://ieeexplore.ieee.org/document/10589761",
+            dates: "Jan — May 2023",
+            description: "Developed wireless control of robot manipulator using human motion, aiming to seamlessly integrate motion capture, robot control, and real-time visualization.",
+            technologies: ["Python", "MQTT", "NumPy", "ASRS", "MPU9250", "Raspberry Pi 4B"],
+            image: academicProject4,
+            video: "",
+            links: [
+                {
+                    type: "website",
+                    href: "https://ieeexplore.ieee.org/document/10589761",
+                },
+                {
+                    type: "source",
+                    href: "https://github.com/phurin-git/python-ahrs-mpu9250",
                 },
             ],
         },
