@@ -110,7 +110,7 @@ export const data = {
     projects: [
         {
             title: "Portfolio-v1",
-            href: "https://portfolio-phurin-nararats-projects.vercel.app/",
+            href: "https://portfolio-phurin-nararatshttps://portfolio-v1-git-main-phurinnararat.vercel.app/",
             dates: "23 — 28 Jul 2024",
             description: "Discover my journey as a web developer with Portfolio V1, a personal project designed to showcase my skills, projects, and professional growth. This project serves as a comprehensive introduction to my work and capabilities in web development.",
             technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
