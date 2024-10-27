@@ -8,6 +8,7 @@ import me from '../images/me.png';
 import company1 from '../images/logo/melft.svg';
 import company2 from '../images/logo/sst.svg';
 import school1 from '../images/logo/ku.svg';
+import school2 from '../images/logo/westride.svg';
 import project1 from '../images/og/portfolio-v1.png';
 import project2 from '../images/og/space-tourism.png';
 import project3 from '../images/og/positivus.png';
@@ -103,8 +104,16 @@ export const data = {
             href: "https://www.ku.ac.th/",
             degree: "B.Eng. in Robotic and Automation Systems Engineering",
             logoUrl: school1,
-            start: "2019",
-            end: "2023",
+            start: "Jul 2019",
+            end: "Apr 2023",
+        },
+        {
+            school: "WeStride Institute of Technology",
+            href: "https://www.we-stride.com/",
+            degree: "Full-Stack Development Bootcamp",
+            logoUrl: school2,
+            start: "Oct 2024",
+            end: "Present",
         },
     ].reverse(),
     projects: [
